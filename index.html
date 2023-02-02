@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>QR Code Generator</title>
+    <script src="./app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">QR Generator</div>
+    </header>
+    <div class="view">
+      <main class="user-input">
+        <input
+          type="text"
+          placeholder="Type something..."
+          name="input_text"
+          id="inputtext"
+          autocomplete="off"
+        />
+        <button id="btn" class="button" type="submit">
+          Generate<i class="fa-solid fa-rotate"></i>
+        </button>
+      </main>
+
+      <section class="qr-code-container">
+        <div class="qr-code" id="code" style></div>
+      </section>
+    </div>
+    <!-- <footer>
+      <p>&copy; AbuaslamTech - 30 Days of Code</p>
+    </footer> -->
+  </body>
+</html>
